@@ -4,7 +4,7 @@
   import path from 'path';
 
   export default defineConfig({
-    base: './',
+    base: '/gin-site/',
     plugins: [react()],
     resolve: {
       extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
