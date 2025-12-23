@@ -39,7 +39,7 @@ export function Header({ currentLang, setCurrentLang }: HeaderProps) {
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <div>
-            <h3 className="text-pink-700">Катерина Крутько</h3>
+            <h3 className="text-pink-700">Катерина Кушнаренко</h3>
             <p className="text-sm text-gray-600">{currentLang === 'ru' ? 'Врач-гинеколог' : 'Лікар-гінеколог'}</p>
           </div>
           

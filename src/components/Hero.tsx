@@ -10,17 +10,17 @@ export function Hero({ currentLang }: HeroProps) {
   const translations = {
     ru: {
       badge: 'Женское здоровье — мой приоритет',
-      title: 'Катерина Крутько',
+      title: 'Катерина Кушнаренко',
       subtitle: 'Врач-гинеколог',
       description: 'Профессиональная медицинская помощь с заботой и вниманием к каждой пациентке. Современные методы диагностики и лечения в комфортной атмосфере.',
-      phone: '+380664006828',
+      contact: 'Связаться со мной',
     },
     uk: {
       badge: 'Жіноче здоров\'я — мій пріоритет',
-      title: 'Катерина Крутько',
+      title: 'Катерина Кушнаренко',
       subtitle: 'Лікар-гінеколог',
       description: 'Професійна медична допомога з турботою та увагою до кожної пацієнтки. Сучасні методи діагностики та лікування в комфортній атмосфері.',
-      phone: '+380664006828',
+      contact: 'Зв\'язатися зі мною',
     },
   };
 
@@ -46,7 +46,7 @@ export function Hero({ currentLang }: HeroProps) {
             <div className="flex flex-wrap gap-4">
               <Button variant="outline" size="lg" className="border-orange-400 text-orange-700 hover:bg-orange-50">
                 <Phone className="mr-2 h-5 w-5" />
-                {t.phone}
+                {t.contact}
               </Button>
             </div>
           </div>
@@ -54,7 +54,7 @@ export function Hero({ currentLang }: HeroProps) {
             <div className="absolute inset-0 bg-gradient-to-r from-pink-300 to-orange-300 rounded-3xl transform rotate-6 opacity-20"></div>
             <img 
               src={heroImage}
-              alt="Доктор Катерина Крутько"
+              alt="Доктор Катерина Кушнаренко"
               className="relative rounded-3xl shadow-2xl w-full h-auto object-contain"
             />
           </div>
