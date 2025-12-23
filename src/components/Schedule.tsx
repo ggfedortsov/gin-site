@@ -14,8 +14,7 @@ export function Schedule({ currentLang }: ScheduleProps) {
       addressTitle: 'Адрес клиники',
       days: ['Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье'],
       times: ['9:00 - 18:00', '9:00 - 18:00', '9:00 - 18:00', '9:00 - 18:00', '9:00 - 17:00', '10:00 - 14:00', 'Выходной'],
-      address1: 'г. Одесса, ул. Дерибасовская, 10',
-      address2: 'Медицинский центр "Здоровье", 3 этаж, кабинет 305',
+      address1: 'г. Одесса, ж/м Радужний, д. 24',
       warning: '⚠️ Приём строго по предварительной записи',
       phone: 'Телефон',
       email: 'Email',
@@ -27,8 +26,7 @@ export function Schedule({ currentLang }: ScheduleProps) {
       addressTitle: 'Адреса клініки',
       days: ['Понеділок', 'Вівторок', 'Середа', 'Четвер', 'П\'ятниця', 'Субота', 'Неділя'],
       times: ['9:00 - 18:00', '9:00 - 18:00', '9:00 - 18:00', '9:00 - 18:00', '9:00 - 17:00', '10:00 - 14:00', 'Вихідний'],
-      address1: 'м. Одеса, вул. Дерибасівська, 10',
-      address2: 'Медичний центр "Здоров\'я", 3 поверх, кабінет 305',
+      address1: 'м. Одеса, ж/м Радужний, буд. 24',
       warning: '⚠️ Прийом строго за попереднім записом',
       phone: 'Телефон',
       email: 'Email',
@@ -99,12 +97,9 @@ export function Schedule({ currentLang }: ScheduleProps) {
               <p className="text-gray-700">
                 {t.address1}
               </p>
-              <p className="text-gray-600 text-sm">
-                {t.address2}
-              </p>
               <div className="aspect-video bg-gradient-to-br from-pink-100 to-orange-100 rounded-lg overflow-hidden">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2748.0234567890123!2d30.7403!3d46.4825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c6318a0b0b0b0b%3A0x0!2zRGVyaWJhc292c2theWEgU3QsIDEwLCBPZGVzYSwgT2Rlc3NhIE9ibGFzdCwgNjUwMDA!5e0!3m2!1sen!2sua!4v1234567890123"
+                  src="https://www.google.com/maps?q=46.403817,30.701884&output=embed"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}

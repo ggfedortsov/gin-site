@@ -1,4 +1,4 @@
-import { Instagram, Facebook, Send, Phone } from 'lucide-react';
+import { Instagram, Send, Phone } from 'lucide-react';
 import { Music4, Mail } from 'lucide-react';
 import { Button } from './ui/button';
 import { Card, CardContent } from './ui/card';
@@ -18,7 +18,7 @@ export function Contact({ currentLang }: ContactProps) {
       callNow: 'Позвонить сейчас',
       writeTelegram: 'Написать в Telegram',
       footer1: '© 2024 Кабинет гинеколога Катерины Крутько',
-      footer2: 'г. Одесса, ул. Дерибасовская, 10 • +38 (048) 123-45-67',
+      footer2: 'г. Одесса, ж/м Радужний, д. 24 • +380664006828',
       phone: 'Телефон',
       email: 'Email',
     },
@@ -31,7 +31,7 @@ export function Contact({ currentLang }: ContactProps) {
       callNow: 'Подзвонити зараз',
       writeTelegram: 'Написати в Telegram',
       footer1: '© 2024 Кабінет гінеколога Катерини Крутько',
-      footer2: 'м. Одеса, вул. Дерибасівська, 10 • +38 (048) 123-45-67',
+      footer2: 'м. Одеса, ж/м Радужний, буд. 24 • +380664006828',
       phone: 'Телефон',
       email: 'Email',
     },
@@ -43,29 +43,22 @@ export function Contact({ currentLang }: ContactProps) {
     {
       name: 'Instagram',
       icon: Instagram,
-      link: '#',
-      username: '@dr_krutko',
+      link: 'https://www.instagram.com/womensecrets2023',
+      username: '@womensecrets2023',
       color: 'from-pink-500 to-purple-500',
-    },
-    {
-      name: 'Facebook',
-      icon: Facebook,
-      link: '#',
-      username: 'Dr. Katerina Krutko',
-      color: 'from-blue-500 to-blue-600',
     },
     {
       name: 'Telegram',
       icon: Send,
-      link: '#',
-      username: '@dr_krutko_clinic',
+      link: 'https://t.me/Dr_Katerina_Odesa',
+      username: '@Dr_Katerina_Odesa',
       color: 'from-sky-400 to-sky-500',
     },
     {
       name: 'TikTok',
       icon: Music4,
-      link: '#',
-      username: '@dr_krutko',
+      link: 'https://www.tiktok.com/@usery3r28yjmze',
+      username: '@usery3r28yjmze',
       color: 'from-gray-800 to-gray-900',
     },
   ];
@@ -81,7 +74,7 @@ export function Contact({ currentLang }: ContactProps) {
         </div>
 
         <div className="max-w-4xl mx-auto">
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+          <div className="grid md:grid-cols-3 gap-6 mb-12 max-w-3xl mx-auto">
             {socialMedia.map((social, index) => {
               const Icon = social.icon;
               return (
@@ -92,9 +85,17 @@ export function Contact({ currentLang }: ContactProps) {
                     </div>
                     <h3 className="text-gray-800 mb-2">{social.name}</h3>
                     <p className="text-gray-600 text-sm mb-4">{social.username}</p>
-                    <Button variant="outline" className="w-full border-pink-300 text-pink-600 hover:bg-pink-50">
-                      {t.subscribe}
-                    </Button>
+                    {social.link ? (
+                      <a href={social.link} target="_blank" rel="noopener noreferrer" className="block">
+                        <Button variant="outline" className="w-full border-pink-300 text-pink-600 hover:bg-pink-50">
+                          {t.subscribe}
+                        </Button>
+                      </a>
+                    ) : (
+                      <Button variant="outline" className="w-full border-pink-300 text-pink-600 hover:bg-pink-50">
+                        {t.subscribe}
+                      </Button>
+                    )}
                   </CardContent>
                 </Card>
               );
@@ -107,14 +108,14 @@ export function Contact({ currentLang }: ContactProps) {
                 <Phone className="h-5 w-5" />
                 <div>
                   <p className="text-sm opacity-90">{t.phone}</p>
-                  <p>+38 (048) 123-45-67</p>
+                  <p>+380664006828</p>
                 </div>
               </div>
               <div className="flex items-center gap-3">
                 <Mail className="h-5 w-5" />
                 <div>
                   <p className="text-sm opacity-90">{t.email}</p>
-                  <p>krutko.katerina@clinic.od.ua</p>
+                  <p>doctor@doctor.odesa.ua</p>
                 </div>
               </div>
             </CardContent>

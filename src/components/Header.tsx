@@ -71,9 +71,9 @@ export function Header({ currentLang, setCurrentLang }: HeaderProps) {
               <Globe className="h-4 w-4 mr-2" />
               {currentLang === 'ru' ? 'УКР' : 'РУС'}
             </Button>
-            <a href="tel:+380481234567" className="flex items-center gap-2 text-pink-600">
+            <a href="tel:+380664006828" className="flex items-center gap-2 text-pink-600">
               <Phone className="h-5 w-5" />
-              <span className="hidden lg:inline">+38 (048) 123-45-67</span>
+              <span className="hidden lg:inline">+380664006828</span>
             </a>
           </div>
         </div>
